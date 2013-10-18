@@ -6,15 +6,18 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/2.2.1/lodash.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.0.0/backbone-min.js"></script>
-		<script src="../angular-backbone-bindings.js"></script>
+		<script src="angular-backbone-bindings.js"></script>
 		<script src="app.js"></script>
 	</head>
 	<body ng-app="testApp">
 
-		<input type="text" ng-model="name" bb-model="model"/>
-		<textarea ng-model="name" bb-model="model"></textarea>
+		<h1>Input text</h1>
+		<input type="text" ng-model="name" bb-model="model" id="inputText" />
+		<div id="printDiv">{{ model.get('name') }}</div>
 
-		<div>{{ model.get('name') }}</div>
+		<h2>Textarea</h2>
+		<input type="text" ng-model="name" bb-model="model" id="inputText" />
+		<div id="printDiv">{{ model.get('name') }}</div>
 	
 	</body>
 </html>

@@ -1,0 +1,8 @@
+{
+  "name": "yom-angularjs-testing-article",
+  "dependencies": {
+    "angularjs": "http://code.angularjs.org/1.1.5/angular.js",
+    "angular-mocks": "http://code.angularjs.org/1.1.5/angular-mocks.js",
+    "ngMidwayTester" : "https://github.com/yearofmoo/ngMidwayTester.git"
+  }
+}
