@@ -13,6 +13,7 @@ app.directive('bbModel', function($timeout) {
         var attrToSet = attrs.ngModel;
         var model = scope[attrs.bbModel];
 
+
         if (!model) {
           throw new Error(attrs.bbModel + ' not found on the scope.');
         }
@@ -20,6 +21,12 @@ app.directive('bbModel', function($timeout) {
         if (!attrToSet) {
           throw new Error('You need to specify which bb-attr you want to set');
         }
+
+        $timeout(function(){  
+          if (model.get(attrToSet)) {
+            elem.val(model.get(attrToSet));
+          }
+        }, 0);
 
         // Push a new parser that we'll use to set the value read from the DOM to our backbone model
         ngModel.$parsers.push(function(domValue){
