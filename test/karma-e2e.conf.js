@@ -5,7 +5,7 @@ module.exports = function(config) {
 
   config.set({
     frameworks: ['ng-scenario'],
-    files: ['test/e2e/**/*.js'],
+    files: ['test/e2e/directives/*.js'],
     urlRoot: '/_karma_/',
     proxies: {
       '/': 'http://localhost:8000/'

@@ -8,6 +8,6 @@ module.exports = function(config) {
     'components/ngMidwayTester/Source/ngMidwayTester.js',
 
     //test files
-    'test/midway/**/*.js'
+    'test/midway/directives/*.js'
   ]);
 };

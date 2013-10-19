@@ -17,16 +17,12 @@ shared.files = [
 
   //3rd Party Code
   'components/angularjs/index.js',
-  'app/scripts/lib/router.js',
+  'components/lodash/dist/lodash.js',
+  'components/backbone/backbone.js',
 
   //App-specific Code
-  'app/scripts/config/config.js',
-  'app/scripts/services/**/*.js',
-  'app/scripts/directives/**/*.js',
-  'app/scripts/controllers/**/*.js',
-  'app/scripts/filters/**/*.js',
-  'app/scripts/config/routes.js',
-  'app/scripts/app.js',
+  'app/angular-backbone-bindings.js',
+  'app/app.js',
 
   //Test-Specific Code
   'node_modules/chai/chai.js',

@@ -3,6 +3,8 @@
   "dependencies": {
     "angularjs": "http://code.angularjs.org/1.1.5/angular.js",
     "angular-mocks": "http://code.angularjs.org/1.1.5/angular-mocks.js",
-    "ngMidwayTester" : "https://github.com/yearofmoo/ngMidwayTester.git"
+    "ngMidwayTester": "https://github.com/yearofmoo/ngMidwayTester.git",
+    "backbone": "~1.1.0",
+    "lodash": "~2.2.1"
   }
 }

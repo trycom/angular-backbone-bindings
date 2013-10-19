@@ -8,6 +8,6 @@ module.exports = function(config) {
     'components/angular-mocks/index.js',
 
     //test files
-    './test/unit/**/*.js'
+    './test/unit/directives/*.js'
   ]);
 };
